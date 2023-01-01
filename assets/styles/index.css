@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.main-container header {
+  background: rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 4;
+}
+
+main .hero {
+  width: 100%;
+  height: 98vh;
+  background: url(../images/bg-service.jpg) no-repeat  top center /cover;
+  position: relative;
+  top: -90px;
+}
+
+.hero .content {
+  width: 90%;
+  height: 50vh;
+  margin: 0 0 0 5%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero .content h2 {
+  color: var(--text-primary-color);
+  margin-bottom: 5px;
+}
+
+.hero .content h4 {
+  color: var(--text-secundary-color);
+}
+
+.hero .content .btn {
+  margin-top: 30px;
+  white-space: nowrap;
+}
+
+/* Top Stages */
+main .top-stages {
+  width: 100%;
+  height: 450px;
+  padding-top: 40px;
+  background: #fdfdfd;
+}
+
+.top-stages h2 {
+  text-align: center;
+  color: var(--text-primary-color);
+}
+
+.top-stages .content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.top-stages .content .item {
+  flex: 0 0 30%;
+  max-width: 30%;
+  height: 280px;
+  margin: 0 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: var(--default-border-r);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: margin 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.top-stages .content .item:hover {
+  margin-top: -1rem;
+}
+
+.top-stages .content .item figure {
+  position: relative;
+  height: 170px;
+}
+
+.top-stages .content .item figure a.btn-more {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 180px;
+  color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+.top-stages .content .item figure:hover a.btn-more {
+  display: block;
+}
+
+.top-stages .content .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-stages .content .item h4 {
+  color: var(--text-primary-color);
+  padding-left: 0.5rem;
+  margin: 1rem 0 0.2rem 0;
+}
+
+.top-stages .content .item p a {
+  color: var(--text-secundary-color);
+  padding-left: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 990px) {
+  .top-stages .content {
+    overflow-x: scroll;
+  }
+
+  .top-stages .content .item {
+    flex: 0 0 320px;
+    max-width: 320px;
+  }
+}

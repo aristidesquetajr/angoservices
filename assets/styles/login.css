@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* VARIAVEIS */
+:root {
+    --bg-primary: #35506d;
+    --default-border-radius: 16px;
+    --input-border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 16px Aria, Helvetica, sans-serif;
+    background: var(--bg-primary);
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 510px;
+    width: calc(100% - 2rem);
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: var(--default-border-radius);
+    color: #e0e0e0;
+}
+
+.container > a  {
+    display: block;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
+form ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+form ul li {
+    margin: 0.4rem 0;
+}
+
+form ul li label span {
+    font-size: 1.15em;
+}
+
+form ul li label input {
+    width: 100%;
+    padding: 8px 0 8px 8px;
+    margin: 0.2rem 0;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    border-radius: var(--input-border-radius);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form ul li label input:focus{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form ul li[aria-login] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form ul li[aria-login] input {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 1rem;
+    background-color: var(--bg-primary);
+    color: white;
+    border-radius: var(--input-border-radius);
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+form ul li[aria-login] input:hover {
+    filter: grayscale(20%);
+}
+
+form ul li[aria-login] button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+    border-radius: var(--input-border-radius);
+    border: 1px solid var(--bg-primary);
+    color: var(--bg-primary);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form ul li[aria-login] button:hover {
+    background-color: var(--bg-primary);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d0d0d0;    
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 380px) {
+    .container > a img {
+        width: 100%;
+        height: auto;
+    }
+}

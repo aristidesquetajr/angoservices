@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.container header {
+  position: fixed;
+  width: 325px;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}

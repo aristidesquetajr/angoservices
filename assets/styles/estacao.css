@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.main-container header a {
+  color: #fff;
+}
+
+header li:hover::before {
+  background: #fff;
+}
+
+main .container {
+  width: 100%;
+  background: #ddd;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
