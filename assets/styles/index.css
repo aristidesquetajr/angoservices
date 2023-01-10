@@ -2,13 +2,14 @@
 
 .main-container header {
   background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 4;
 }
 
 main .hero {
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   background: url(../images/bg-service.jpg) no-repeat  top center /cover;
   position: relative;
   top: -90px;
@@ -41,13 +42,13 @@ main .hero {
 main .top-stages {
   width: 100%;
   height: 450px;
-  padding-top: 40px;
   background: #fdfdfd;
 }
 
 .top-stages h2 {
   text-align: center;
   color: var(--text-primary-color);
+  margin-bottom: 5px;
 }
 
 .top-stages .content {
@@ -66,13 +67,13 @@ main .top-stages {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: var(--default-border-r);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transition: margin 0.5s ease;
+  transition: margin 0.3s ease;
   overflow: hidden;
   cursor: pointer;
 }
 
 .top-stages .content .item:hover {
-  margin-top: -1rem;
+  margin-top: -0.8rem;
 }
 
 .top-stages .content .item figure {
@@ -80,21 +81,19 @@ main .top-stages {
   height: 170px;
 }
 
-.top-stages .content .item figure a.btn-more {
+.top-stages .content .item figure a::before {
+  content: "";
   position: absolute;
   display: none;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  line-height: 180px;
-  color: #fdfdfd;
+  background: rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
-.top-stages .content .item figure:hover a.btn-more {
+.top-stages .content .item figure:hover a::before {
   display: block;
 }
 

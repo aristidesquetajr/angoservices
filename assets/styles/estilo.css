@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-/* VARIAVEIS */:root
-{
+/* VARIAVEIS */
+:root {
     --bg-primary: #35506d;
     --bg-secundary: null;
     --text-primary-color: #313131;
@@ -30,7 +30,7 @@ a {
 .btn {
     display: inline-block;
     background: var(--bg-primary);
-    border-radius: 14px;
+    border-radius: 12px;
     border: none;
     padding: 8px 16px;
     color: #fff;
