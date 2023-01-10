@@ -18,9 +18,13 @@ main .container {
 }
 
 .search {
-  display: flex;
-  align-items: center;
+  background-color: #ddd;
+  margin-bottom: 30px;
+  padding: 15px 10px;
+  border-radius: var(--default-border-r);
 }
+
+
 
 .estacoes {
   display: flex;
@@ -94,6 +98,10 @@ main .container {
 }
 
 @media (max-width: 740px) {
+  .estacoes {
+    justify-content: center;
+  }
+
   .estacao-item {
     flex: 0 0 100%;
     max-width: 100%;

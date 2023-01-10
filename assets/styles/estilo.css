@@ -6,7 +6,7 @@
     --bg-secundary: null;
     --text-primary-color: #313131;
     --text-secundary-color: #515151;
-    --default-border-r: 12px;
+    --default-border-r: 10px;
 }
 
 * {
@@ -164,7 +164,7 @@ footer .content + p a:hover {
 
 
 /* RESPONSIVIDADE */
-@media(max-width: 700px) {
+@media(max-width: 830px) {
 
     .main-container header {
         padding: 0 0 0 0.4rem;
@@ -173,10 +173,10 @@ footer .content + p a:hover {
     header .icon-menu {
         display: block;
         position: absolute;
-        z-index: 3;
+        top: 0.4rem;
         right: 1rem;
-        top: 0.3rem;
         color: white;
+        z-index: 3;
     }
 
     header input:checked ~ nav {
@@ -210,8 +210,7 @@ footer .content + p a:hover {
     }
 
     header nav ul li::before {
-        left: 0;
-        bottom: -0.1rem;
+        content: none;
     }
 
     header nav ul li:hover {

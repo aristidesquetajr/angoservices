@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name Estaçãos</title>
-</head>
-<body>
-  <div class="container">
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name Estaçãos</title>
+        <link rel="stylesheet" href="../assets/styles/estilo.css">
+        <script src="../assets/script/fontawesome.min.js" defer></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="AngoServices"></a>
 
-    </header>
-    <main id="main">
+                <input type="checkbox" id="check-menu" hidden/>
+                <label class="icon-menu" for="check-menu">
+                    <i class="fas fa-bars fa-2x"></i>
+                </label>
 
-    </main>
-    
-  </div>
-</body>
+                <nav>
+                    <ul id="main-menu">
+                        <li>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Estações</a>
+                        </li>
+                        <li>
+                            <a href="../profile/index.html">Profile</a>
+                        </li>
+                    </ul>
+
+                    <ul id="menu-login">
+                        <li>
+                            <a href="../login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="../cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main"></main>
+        </div>
+    </body>
 </html>

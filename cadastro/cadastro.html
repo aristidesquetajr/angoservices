@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngoServices - Cadastro</title>
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/styles/login.css">
-    <script defer src="assets/script/fontawesome.min.js"></script>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/login.css">
+    <link rel="stylesheet" href="../assets/styles/cadastro.css">
+    <script defer src="../assets/script/fontawesome.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <a href="index.html"><img src="assets/images/logo.png" alt="AngoServices"></a>
-        <form action="login.html" method="get">
+        <a href="../index.html"><img src="../assets/images/logo.png" alt="AngoServices"></a>
+        <form action="../login.html" method="get">
             <ul>
                 <li>
                     <label>Nome:
@@ -25,6 +26,16 @@
                     </label>
                 </li>
                 <li>
+                    <label>Senha:
+                        <input type="password" name="pass">
+                    </label>
+                </li>
+                <li>
+                    <label>Confirmar Senha:
+                        <input type="password" name="pass">
+                    </label>
+                </li>
+                <li class="btn-cadastro">
                     <input type="submit" value="Criar conta">
                     <input type="submit" value="Entrar com Google">
                 </li>
